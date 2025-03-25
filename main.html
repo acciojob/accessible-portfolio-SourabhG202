@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>Portfolio</h1>
-	<nav>
-		<img src="sourabh.jpg" alt="Profile">
-	</nav>
-	<ul>
-		<li>Name</li>
-		<li>Email</li>
-		<li>Phone</li>
-	</ul>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Main Heading with ARIA Role -->
+    <h1 role="heading" aria-level="1">Portfolio</h1>
+
+    <!-- Navigation Bar with ARIA Role -->
+    <nav role="navigation">
+        <img src="sourabh.jpg" alt="Profile Picture" role="img">
+    </nav>
+
+    <!-- Proper List Implementation with ARIA Roles -->
+    <ul role="list">
+        <li role="listitem">Name</li>
+        <li role="listitem">Email</li>
+        <li role="listitem">Phone</li>
+    </ul>
+
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
